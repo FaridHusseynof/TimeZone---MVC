@@ -1,0 +1,405 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .containerHeader {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .containerHeader nav {
+  width: 40%;
+}
+header .containerHeader nav ul {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+}
+header .containerHeader nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+header .containerHeader nav ul li a:hover {
+  color: #ff2020;
+}
+header .containerHeader .icons {
+  width: 10%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+header .containerHeader .icons li a {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+header .containerHeader .icons li a:hover {
+  color: #ff2020;
+}
+header .containerHeader .icons .hamburger {
+  display: none;
+}
+
+#hero {
+  width: 100%;
+  height: 110vh;
+  background-color: #E0E0E2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .containerHero {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .containerHero .heroTexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+#hero .containerHero .heroTexts h1 {
+  color: #0b1c39;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 115px;
+}
+#hero .containerHero .heroTexts .buttonP {
+  width: 70%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#hero .containerHero .heroTexts .buttonP p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  color: #212025;
+  font-family: "Roboto", sans-serif;
+}
+#hero .containerHero .heroTexts .buttonP button {
+  width: 25%;
+  height: 30%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 0px;
+  color: #fff;
+  padding: 5px 5px;
+  background-color: #4A4A4B;
+  border: none;
+  cursor: pointer;
+}
+#hero .containerHero .heroTexts .buttonP button:hover {
+  background-color: #FF2020;
+}
+#hero .containerHero .heroImage img {
+  height: 100%;
+}
+
+#newArrivals {
+  width: 100%;
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#newArrivals .containerArrivals {
+  width: 80%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#newArrivals .containerArrivals h1 {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: black;
+}
+#newArrivals .containerArrivals .cardsArrivals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 83%;
+}
+#newArrivals .containerArrivals .cardsArrivals .card {
+  text-align: center;
+}
+#newArrivals .containerArrivals .cardsArrivals .card h2 {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #444444;
+}
+#newArrivals .containerArrivals .cardsArrivals .card span {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ff2020;
+}
+
+#popularItems {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popularItems .containerPopular {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#popularItems .containerPopular .popularTexts {
+  width: 50%;
+}
+#popularItems .containerPopular .popularTexts h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #000000;
+}
+#popularItems .containerPopular .popularTexts p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+}
+#popularItems .containerPopular .popularCards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+#popularItems .containerPopular .popularCards .cardPopular {
+  display: flex;
+  flex-direction: column;
+}
+#popularItems .containerPopular .popularCards .cardPopular h4 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #444444;
+}
+#popularItems .containerPopular .popularCards .cardPopular span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #444444;
+}
+#popularItems .containerPopular button {
+  width: 20%;
+  height: 4%;
+  background-color: #FF2020;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#popularItems .containerPopular button:hover {
+  background-color: #4A4A4B;
+}
+
+#watchChoice {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#watchChoice .containerChoice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+  width: 80%;
+}
+#watchChoice .containerChoice .choiceInfo {
+  display: flex;
+  height: 45%;
+  align-items: center;
+  justify-content: space-between;
+}
+#watchChoice .containerChoice .choiceInfo .choiceTexts {
+  height: 50%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#watchChoice .containerChoice .choiceInfo .choiceTexts h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  color: #000000;
+}
+#watchChoice .containerChoice .choiceInfo .choiceTexts p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+}
+#watchChoice .containerChoice .choiceInfo .choiceTexts button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 0px;
+  color: #fff;
+  cursor: pointer;
+  width: 40%;
+  height: 20%;
+  background-color: #FF2020;
+  border: none;
+}
+#watchChoice .containerChoice .choiceInfo .choiceTexts button:hover {
+  background-color: #4A4A4B;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  header .containerHeader nav {
+    display: none;
+  }
+  header .containerHeader .icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+  }
+  header .containerHeader .icons li {
+    display: none;
+  }
+  header .containerHeader .icons .hamburger {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+  #hero {
+    height: 80vh;
+  }
+  #hero .containerHero {
+    height: 70%;
+  }
+  #hero .containerHero .heroTexts {
+    height: 100%;
+  }
+  #hero .containerHero .heroTexts h1 {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+  }
+  #hero .containerHero .heroTexts .buttonP {
+    height: 70%;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #hero .containerHero .heroTexts .buttonP button {
+    width: 50%;
+    height: 25%;
+  }
+  #hero .containerHero .heroImage {
+    display: none;
+  }
+  #newArrivals {
+    height: 320vh;
+  }
+  #newArrivals .containerArrivals {
+    width: 95%;
+    height: 90%;
+  }
+  #newArrivals .containerArrivals h1 {
+    padding-left: 0px;
+    font-size: 33px;
+    line-height: 33px;
+  }
+  #newArrivals .containerArrivals .cardsArrivals {
+    height: 95%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  #newArrivals .containerArrivals .cardsArrivals .card h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #popularItems {
+    height: 600vh;
+  }
+  #popularItems .containerPopular {
+    width: 95%;
+  }
+  #popularItems .containerPopular .popularTexts {
+    width: 100%;
+  }
+  #popularItems .containerPopular .popularTexts h1 {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 33px;
+  }
+  #popularItems .containerPopular .popularCards {
+    grid-template-columns: 1fr;
+  }
+  #popularItems .containerPopular button {
+    width: 70%;
+    height: 2%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0px;
+  }
+  #watchChoice {
+    height: 250vh;
+  }
+  #watchChoice .containerChoice {
+    width: 95%;
+    justify-content: center;
+    gap: 30px;
+  }
+  #watchChoice .containerChoice .choiceInfo {
+    flex-direction: column;
+  }
+  #watchChoice .containerChoice .choiceInfo .choiceTexts {
+    width: 100%;
+  }
+  #watchChoice .containerChoice .choiceInfo .choiceTexts h1 {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 29px;
+  }
+  #watchChoice .containerChoice .choiceInfo .choiceTexts button {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  #watchChoice .containerChoice .choiceInfo img {
+    width: 100%;
+  }
+}

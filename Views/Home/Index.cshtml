@@ -1,0 +1,110 @@
+﻿@using TimeZone.ViewModel
+@model HomeViewModel
+
+@{
+	Layout="_Layout";
+}
+
+<main>
+    <section id="hero">
+        <div class="containerHero">
+            <div class="heroTexts">
+
+                <h1>@Model.Summary.Title</h1>
+                <div class="buttonP">
+                    <p>
+                       @Model.Summary.Description
+                    </p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+            <div class="heroImage"><img src="./assets/images/imgi_2_watch.png" alt="watch"></div>
+        </div>
+    </section>
+
+    <section id="newArrivals">
+        <div class="containerArrivals">
+            <h1>New Arrivals</h1>
+            <div class="cardsArrivals">
+                <div class="card">
+                    <img src="./assets/images/imgi_3_new_product1.png" alt="watch">
+                    <h2>Thermo Ball Etip Gloves</h2>
+                    <span>$ 45,743</span>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/imgi_4_new_product2.png" alt="watch">
+                    <h2>Thermo Ball Etip Gloves</h2>
+                    <span>$ 45,743</span>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/imgi_5_new_product3.png" alt="watch">
+                    <h2>Thermo Ball Etip Gloves</h2>
+                    <span>$ 45,743</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="popularItems">
+        <div class="containerPopular">
+            <div class="popularTexts">
+                <h1>Popular Items</h1>
+                <p>
+                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Quis ipsum suspendisse
+                    ultrices gravida.
+                </p>
+            </div>
+
+            <div class="popularCards">
+                @foreach (var item in Model.Products)
+                {
+                    <div class="cardPopular">
+                        <img src="./assets/images/@item.productImages.FirstOrDefault().ImageURL" alt="watch">
+                        <h4>@item.Title</h4>
+                        <span>@item.category.Name</span>
+                        <span>$ @item.Price</span>
+                    </div>
+                }
+               
+
+                
+            </div>
+
+            <button>VIEW MORE PRODUCTS</button>
+        </div>
+    </section>
+
+    <section id="watchChoice">
+        <div class="containerChoice">
+            <div class="choiceInfo">
+                <div class="choiceTexts">
+                    <h1>Watch of Choice</h1>
+                    <p>
+                        Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse.
+                    </p>
+                    <button>SHOW MATCHES</button>
+                </div>
+                <img src="./assets/images/imgi_12_choce_watch1.png" alt="watch">
+            </div>
+
+            <div class="choiceInfo">
+                <img src="./assets/images/imgi_13_choce_watch2.png" alt="watch">
+                <div class="choiceTexts">
+                    <h1>Watch of Choice</h1>
+                    <p>
+                        Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse.
+                    </p>
+                    <button>SHOW MATCHES</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

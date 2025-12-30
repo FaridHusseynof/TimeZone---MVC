@@ -1,0 +1,50 @@
+#newArrivals {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerArrivals {
+        width: 80%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            padding-left: 10px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            color: black;
+        }
+
+        .cardsArrivals {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            height: 83%;
+
+            .card {
+                text-align: center;
+
+                h2 {
+                    margin-top: 10px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #444444;
+                }
+
+                span {
+                    margin-top: 10px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #ff2020;
+                }
+            }
+        }
+    }
+}

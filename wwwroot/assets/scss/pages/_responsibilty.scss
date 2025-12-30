@@ -1,0 +1,153 @@
+@media (min-width: 300px) and (max-width: 576px) {
+    header {
+        .containerHeader {
+            nav {
+                display: none;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: flex-end;
+                width: 30%;
+
+                li {
+                    display: none;
+                }
+
+                .hamburger {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+
+    #hero {
+        height: 80vh;
+
+        .containerHero {
+            height: 70%;
+
+            .heroTexts {
+                height: 100%;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 33px;
+                    line-height: 40px;
+                }
+
+                .buttonP {
+                    height: 70%;
+                    width: 100%;
+                    justify-content: space-around;
+
+                    button {
+                        width: 50%;
+                        height: 25%;
+                    }
+                }
+            }
+
+            .heroImage {
+                display: none;
+            }
+        }
+    }
+
+    #newArrivals {
+        height: 320vh;
+
+        .containerArrivals {
+            width: 95%;
+            height: 90%;
+
+            h1 {
+                padding-left: 0px;
+                font-size: 33px;
+                line-height: 33px;
+            }
+
+            .cardsArrivals {
+                height: 95%;
+                grid-template-columns: 1fr;
+                gap: 20px;
+
+                .card {
+                    h2 {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    #popularItems {
+        height: 600vh;
+
+        .containerPopular {
+            width: 95%;
+
+            .popularTexts {
+                width: 100%;
+
+                h1 {
+                    font-size: 33px;
+                    font-weight: 700;
+                    line-height: 33px;
+                }
+            }
+
+            .popularCards {
+                grid-template-columns: 1fr;
+            }
+
+            button {
+                width: 70%;
+                height: 2%;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 0px;
+            }
+        }
+    }
+
+    #watchChoice {
+        height: 250vh;
+
+        .containerChoice {
+            width: 95%;
+            justify-content: center;
+            gap: 30px;
+
+            .choiceInfo {
+                flex-direction: column;
+
+
+                .choiceTexts {
+                    width: 100%;
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 29px;
+                        line-height: 29px;
+                    }
+
+                    button {
+                        width: 50%;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
